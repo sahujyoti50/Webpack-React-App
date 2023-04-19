@@ -1,0 +1,43 @@
+.carList {
+  /* all cars */
+  display: inline-flex;
+
+}
+
+.carDetails {
+  /* single cars */
+  list-style: none;
+  margin: 10px;
+  border: 2px solid rgb(197, 194, 194);
+  height:400px;
+  width: 300px;
+  padding:30px 15px;
+  border-radius: 15%;
+  font-family:arial;
+
+}
+
+h4{
+  margin:5px;
+}
+
+img {
+  /* car img */
+  height: 300px;
+  width: 300px;
+}
+// $backColor:teal;
+// $fontColor:white;
+
+// @for $i from 1 to 9{
+//   .list-#{$i}{
+//    background-color:lighten($backColor,5*$i);
+//    color:darken($fontColor,10*$i);
+//   }
+// }
+$backColor:rgb(153, 150, 150);
+@for $i from 1 to 9{
+  .list-#{$i}{
+   border:2px solid lighten($backColor,5*$i);
+  }
+}
